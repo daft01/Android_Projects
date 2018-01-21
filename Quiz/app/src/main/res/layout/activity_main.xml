@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.example.danielmorales.quiz.MainActivity">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="305dp"
+        android:layout_height="139dp"
+        android:text="Hello World!"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/trueButton"
+            android:layout_width="123dp"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_light"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/falseButton"
+            android:layout_width="129dp"
+            android:layout_height="141dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light"
+            android:text="Button" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:gravity="end"
+        android:text="TextView"
+        android:textAlignment="viewEnd"
+        android:textColor="#FFFF"
+        android:textSize="20dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="34dp" />
+
+
+</LinearLayout>
